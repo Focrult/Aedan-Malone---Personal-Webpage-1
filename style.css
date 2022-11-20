@@ -1,33 +1,28 @@
+
 body{
     background-color: black;
 }
+
 .header{
     color: white;
+    border:solid;
+    border-color: wheat;
+    align-items: center;
+    display: flex;
+
+    flex: 2;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    font-size: 20px;
 }
-.jake-video{
-    background-size:cover;
-}
-.jake-video::after{
-    background: black;
-    position:absolute;
-    inset:0;
-    z-index:-1;
-    content: '';
-    opacity: .5;
-
-}
-
-
-
 
 
 .nav-bar{
 background-color: none;
 overflow: hidden;
 }
-
 .nav-bar a{
-    
     background-color: none;
     float: right;
     padding: 14px 16px;
@@ -36,9 +31,7 @@ overflow: hidden;
     text-align: center;
     transition: 500ms ease-out;
     color: white;
-}
-.nav-bar a:active{
-
+    margin-left: 5px;
 }
 .nav-bar a:hover{
     opacity: 80%;
@@ -46,4 +39,20 @@ overflow: hidden;
     color:black;
     transition: 700ms ease-in;
     cursor: pointer;
+}
+.content{
+    color: red;
+    border: green solid;
+}
+.Projects{
+    color: white;
+    border: solid;
+}
+.About{
+    color: white;
+    border: solid;
+}
+.Contact{
+    color: white;
+    border: solid;
 }
