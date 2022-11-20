@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+}
+.header{
+    color: white;
+}
+.jake-video{
+    background-size:cover;
+}
+.jake-video::after{
+    background: black;
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    content: '';
+    opacity: .5;
+
+}
+
+
+
+
+
+.nav-bar{
+background-color: none;
+overflow: hidden;
+}
+
+.nav-bar a{
+    
+    background-color: none;
+    float: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    transition: 500ms ease-out;
+    color: white;
+}
+.nav-bar a:active{
+
+}
+.nav-bar a:hover{
+    opacity: 80%;
+    background-color: white;
+    color:black;
+    transition: 700ms ease-in;
+    cursor: pointer;
+}
