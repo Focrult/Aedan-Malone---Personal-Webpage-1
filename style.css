@@ -1,60 +1,42 @@
+
 *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::before,
+*::after{
+    box-sizing: border-box;
 }
 body{
-    background-color: rgb(175, 225, 175);
+    background-color:rgb(175, 225, 175);
 }
 .content{
-    color: white;
-    border: green solid;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top:3rem;
+    max-width: 1000px;
+    margin:0 auto;
 }
-.home{
-    height: 100vh;
-    background: rgb(175, 225, 175);
-    box-sizing: border-box;
-    border:solid;
-    border-color: blueviolet;
-    position: relative;
-    z-index:2; /*Initiate z index*/
+h1{
+    font-size: 50px;
 }
-.home:before{
-    position: absolute;
-    content:"";
-    display: block;
-    background-color: black;
-    z-index:-1;/*z-index to put background behind text*/
-    top: 0;
-    left:0;
-    right:0;
-    bottom:0;
-
+h2{
+    font-size: 30px;
 }
-.section-2{
-    height: 50vh;
-    background: rgb(175, 225, 175);
+p{
+    font-size: 20px;
 }
-.projects{
-    display: block;
-    border:solid;
-    border-color: brown;
+div h2{
+padding:1rem 0;
 }
-.contact{
-    display:flex;
-    border:solid;
-    border-color: brown;
+div p{
+    text-align: justify;
+    padding-bottom: 1rem;
 }
-
+.title h1{
+    color: rgba(255, 255, 255, 0.774);
+}
 
 .header{
-    background-color: rgb(89, 129, 89);;
+    background-color: rgb(89, 129, 89);
     color: white;
     align-items: center;
     display: flex;
@@ -62,11 +44,11 @@ body{
     font-size: 20px;
     transform: rotate(-3deg);
 }
-
-
 .nav-bar{
 background-color: none;
 overflow: hidden;
+margin-top: 30px;
+margin-right: 100px;
 }
 .nav-bar a{
     border-radius: 10px;
@@ -78,7 +60,7 @@ overflow: hidden;
     text-align: center;
     transition: 700ms ease-out;
     color: white;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 .nav-bar a:hover{
     opacity: 30%;
