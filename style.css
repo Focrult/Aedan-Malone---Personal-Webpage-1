@@ -37,7 +37,6 @@ color: white;
     width: 750px;
     position: relative;
     left: 150px;
-
 }
 
 .nav-bar{
@@ -102,26 +101,30 @@ color: white;
         margin: auto;
         border-radius: 50%;
     }
-.about{
+
+
+.about{ /*discovered issue with white space in about section*/
     position:relative;
     color:white;
     font-size: 4rem;
-    left:1140px;
+    justify-content: center;
+    text-align: center;
     top: 400px;
 
 }
-.about-box{
+.about-box{ 
     flex-direction: column;
     margin:auto;
     position:absolute;
     display:flex;
+    justify-content: center;
     align-items: center;
     height:400px;
     width:800px;
     top: 800px;
-    left: 35%;
-    color:white;
 
+    color:white;
+    left: 35%;
 
 }
 .about-box p{
