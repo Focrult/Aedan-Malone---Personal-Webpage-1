@@ -4,6 +4,9 @@
     font-family: sans-serif;
     user-select: none;
 }
+a{
+    text-decoration: none;
+}
 .hero{ /*Background Image*/
     background-color: rgba(0,0,0,0.75);
     background-size: cover;
@@ -223,5 +226,4 @@ color: white;
     display: grid;
     grid-template-columns: repeat(3, 150px);
     justify-content: center;
-    color: rgb(233, 84, 108);
 }
