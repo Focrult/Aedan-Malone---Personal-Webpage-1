@@ -146,6 +146,13 @@ color: var(--white);
     margin-bottom: 10px;
     font-size: 25px;
 }
+.avatar{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 500px;
+    border-radius: 50%;
+}
   /*END OF SECTION-1*/
 .section-2{ /*Second section for website*/
     background-color: rgb(8, 8, 8);
