@@ -144,7 +144,6 @@ a{
     flex-direction: column;
     margin:auto;
     position:absolute;
-    display:flex;
     justify-content: center;
     align-items: center;
     height:250px;
@@ -242,20 +241,18 @@ a{
     grid-template-columns: repeat(3, 150px);
     justify-content: center;
 }
-/*Could use much more practice with media queries*/
+/*Could use more practice with media queries*/
 @media only screen and (max-width: 800px){
-*{
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-}
-@media only screen and (min-width:40em ){
     *{
         flex-direction: column;
         justify-content: center;
         text-align: center;
     }
-    
+}
+@media only screen and (min-width:1200px){
+    *{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 }
