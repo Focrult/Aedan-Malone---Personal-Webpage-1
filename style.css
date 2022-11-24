@@ -15,35 +15,52 @@
     padding: 0;
     align-items: center;
     justify-content: center;
-
 }
-.overlay{
+.overlay{ /*Adding shade over background image SECTION-1*/
     width:100%;
     height:100vh;
     background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
     position: absolute;
     top: 0;
-
 }
-.hello{
+.hero2{ /*Background Image2*/
+    background-color: rgba(0,0,0,0.75);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("images/background-image2.jpg");
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    -webkit-transform: scaleY(-1);/*flipping the image for better transition when going to section 2*/
+    transform: scaleY(-1); /*flipping the image for better transition when going to section 2*/
+}
+.overlay2{ /*Adding shade over background image SECTION-2*/
+    width:100%;
+    height:100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
+    position: absolute;
+    top: 0;
+}
+.hello{ /**/
 font-size: 50px;
 width:500px;
 position: relative;
 color: white;
 }
-.hello h3{
+.hello h3{/**/
     top: 30px;
     display:inline-block;
     width: 750px;
     position: relative;
     left: 150px;
 }
-
-.nav-bar{
+.nav-bar{/**/
     position:relative;
     padding: 3rem;
     overflow: hidden;
-
 }
     .nav-bar a{
         position:relative;
@@ -56,7 +73,6 @@ color: white;
         text-align: center;
         transition: 700ms ease-out;
         color: white;
-    
     }
     .nav-bar a:hover{
         opacity: 30%;
@@ -64,26 +80,21 @@ color: white;
         color:black;
         transition: 700ms ease-in;
         cursor: pointer;
-    
     }
     /*line--circle--line : Main page*/
     .lines{
-
         width: 100%;
-        height: 450px;
+        height: 120px;
         position: relative;
-    
     }
-
     .lines::after, .lines::before{
         content:'';
         position:absolute;
         margin:auto;
-        height: 2px;
+        height: 1px;
         background: white;
         width: 45%;
         top:45%;
-    
     }
     .lines::after{
         left:0;
@@ -93,23 +104,21 @@ color: white;
     }
     .circle{
         position: relative;
-        top: 180px;
+        top: 30px;
         height:40px;
         width:40px;
         border: 2px solid white;
         margin: auto;
         border-radius: 50%;
     }
-
-
-.about{ /*discovered issue with white space in about section*/
+    /*about includes the title, box and paragraph*/
+.about{ 
     position:relative;
     color:white;
     font-size: 4rem;
     justify-content: center;
     text-align: center;
-    top: 400px;
-
+    top: 300px;
 }
 .about-box{ 
     flex-direction: column;
@@ -118,20 +127,17 @@ color: white;
     display:flex;
     justify-content: center;
     align-items: center;
-    height:400px;
+    height:250px;
     width:800px;
-    top: 800px;
-
+    top: 750px;
     color:white;
     left: 35%;
-
 }
 .about-box p{
     margin-bottom: 10px;
     font-size: 25px;
-
 }
-.section-2{ /*Background Image*/
+.section-2{ /*Second section for website*/
     background-color: rgb(8, 8, 8);
     width: 100%;
     height: 100vh;
@@ -139,19 +145,18 @@ color: white;
     padding: 0;
     align-items: center;
     justify-content: center;
+    color: white;
 }
-.project-container > * {
-    margin-left: 50px;
-    margin-top: 50px;
-display: flex;
-position: relative;
-justify-content: center;
-justify-items: center;
-align-items: center;
-grid-template-columns: 1fr 1fr;
-border:solid;
+.project-container{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    border: solid;
+    border-color: green;
+}
+.box0,.box1,.box2,.box3 {/*child elements of .project-container*/
+border: solid;
 border-color: red;
-width: 400px;
-height: 400px;
-font-size: 20px;
+height: 200px;
 }
