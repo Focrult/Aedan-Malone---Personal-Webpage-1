@@ -147,16 +147,36 @@ color: white;
     justify-content: center;
     color: white;
 }
-.project-container{
-    width: 50%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 200px 200px;
-    border: solid;
-    border-color: green;
+.header-projects{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
 }
-.box0,.box1,.box2,.box3 {/*child elements of .project-container*/
-border: solid;
-border-color: red;
-height: 200px;
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    flex-direction: row;
+    position:relative;
+}
+.box0,.box1,.box2{/*child elements of .project-container*/
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.project-container i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: rgb(233, 84, 108);
 }
